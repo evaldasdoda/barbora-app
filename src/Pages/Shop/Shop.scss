@@ -1,0 +1,11 @@
+@import "../../Assets/style";
+
+.SHOP {
+  display: flex;
+  &__products {
+    width: 80%;
+  }
+  &__sider {
+    width: 20%;
+  }
+}

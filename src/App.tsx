@@ -1,11 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
+import {Navbar} from "./Components/Navbar/Navbar";
+import {ShopLayout} from "./Pages/Shop/ShopLayout";
 
 function App() {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <>
+      <Navbar />
+      <ShopLayout />
+    </>
   );
 }
 
