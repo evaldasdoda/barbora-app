@@ -1,0 +1,52 @@
+// Basic style setup
+
+/*Colors*/
+/*-----------------------------------------------------------------------------*/
+$black: #000000 !default;
+$white: #ffffff !default;
+
+/*Durations*/
+/*-----------------------------------------------------------------------------*/
+$duration-xs: 200ms !default;
+$duration-sm: 400ms !default;
+$duration-md: 600ms !default;
+$duration-lg: 800ms !default;
+$duration-xl: 1s !default;
+
+/*Fonts*/
+/*-----------------------------------------------------------------------------*/
+$font-xxxxs: 8px !default;
+$font-xxxs: 10px !default;
+$font-xxs: 12px !default;
+$font-xs: 14px !default;
+$font-sm: 16px !default;
+$font-md: 18px !default;
+$font-lg: 24px !default;
+$font-xl: 28px !default;
+$font-xxl: 34px !default;
+$font-xxxl: 38px !default;
+
+/*Paddings & margins*/
+/*-----------------------------------------------------------------------------*/
+$space-xxl: 100px !default;
+$space-xl: 80px !default;
+$space-lg: 60px !default;
+$space-md: 40px !default;
+$space-sm: 20px !default;
+$space-xs: 10px !default;
+$space-xxs: 5px !default;
+
+/*Breakpoints*/
+/*-----------------------------------------------------------------------------*/
+$xxl: 1600px !default;
+$xl: 1200px !default;
+$lg: 992px !default;
+$md: 768px !default;
+$xs: 576px !default;
+$xxs: 320px !default;
+
+/*Other*/
+/*-----------------------------------------------------------------------------*/
+$radius-sm: 4px !default;
+$radius-md: 20px !default;
+$radius-lg: 50% !default;
