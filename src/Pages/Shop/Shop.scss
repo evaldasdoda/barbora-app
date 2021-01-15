@@ -3,10 +3,12 @@
 .SHOP {
   display: flex;
   min-height: calc(100vh - 53px);
+
   &__products {
     width: 80%;
     background-color: $wheat;
   }
+
   &__sider {
     position: sticky;
     top: 55px;
@@ -23,6 +25,7 @@
     &__products {
       width: 70%;
     }
+
     &__sider {
       width: 30%;
     }
@@ -34,6 +37,7 @@
     &__products {
       width: 100%;
     }
+
     &__sider {
       position: fixed;
       top: 75px;
@@ -44,6 +48,7 @@
       transition: all $duration-md;
       border: none;
       transform: translateX(100%);
+
       &.active {
         transform: translateX(0);
       }
@@ -54,6 +59,7 @@
 .SHOP-PRODUCTS {
   display: flex;
   flex-wrap: wrap;
+
   &__product {
     width: 25%;
   }
@@ -80,39 +86,54 @@
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+
   &__topCont {
     padding: $space-xs;
+
     h4 {
       margin-top: $space-xs;
     }
   }
+
   &__bottomCont {
     display: flex;
     background-color: $white;
     padding: $space-sm $space-xs $space-xs;
-    &-button{
+
+    &-button {
       width: 60%;
       padding-right: $space-xxs;
+
       button {
-        background-color: $grey;
+        cursor: pointer;
+        background-color: $d-grey;
+        transition: all $duration-sm;
         color: $l-grey;
         border: none;
         width: 100%;
         height: 100%;
+
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
+
     &-price {
       font-size: $font-xxs;
       width: 40%;
     }
+
     .price, .price-title {
       display: block;
     }
+
     .price-title {
-      color: $grey;
+      color: $d-grey;
     }
   }
 }
+
 @media (max-width: $md) {
   .SHOP-SIDER {
     min-height: calc(100vh - 75px);

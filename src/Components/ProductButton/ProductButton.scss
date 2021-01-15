@@ -8,17 +8,59 @@
   padding: $space-xxs $space-xs;
   cursor: pointer;
   transition: all $duration-sm;
+  width: 70%;
+
   &:hover {
     opacity: 0.8;
   }
 }
-
-@import "../../Assets/style";
 
 @media (max-width: $md) {
   .PRODUCT-BUTTON {
     display: block;
     padding: $space-xs $space-md;
     width: 100%;
+  }
+}
+
+.PRODUCT-QTY {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__add, &__minus {
+    background-color: $white;
+    border: 1px solid $grey;
+    padding: $space-xs;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: all $duration-sm;
+
+    &:hover {
+      background-color: $grey;
+    }
+  }
+
+  &__add {
+    border-bottom-left-radius: $radius-lg;
+    border-top-left-radius: $radius-lg;
+  }
+
+  &__minus {
+    border-bottom-right-radius: $radius-lg;
+    border-top-right-radius: $radius-lg;
+  }
+
+  &__qtyCont {
+    height: 40px;
+    padding: $space-xs;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    line-height: 16px;
+
+    .qty-title {
+      margin-left: $space-xs;
+    }
   }
 }

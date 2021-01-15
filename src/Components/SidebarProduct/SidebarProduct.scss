@@ -1,31 +1,51 @@
 @import "../../Assets/style";
 
 .SIDEBAR-PRODUCT {
+  position: relative;
   display: flex;
   background-color: $white;
   padding: $space-xs;
   font-size: $font-xxs;
+  margin-top: $space-xs;
+
   &__image {
+    min-width: 100px;
+    max-width: 100px;
+
     img {
       width: 100px;
     }
   }
+
+  &__delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: $d-grey;
+    cursor: pointer;
+    font-size: 10px;
+  }
+
   &__info {
     &-title {
       width: 100%;
     }
+
     &-details {
       margin-top: $space-xs;
       display: flex;
       align-items: center;
+
       &-qty {
         width: 50%;
         border: 1px solid $grey;
         padding: $space-xxs;
+
         .qty-title {
           margin-left: $space-xs;
         }
       }
+
       &-price {
         width: 50%;
         text-align: right;

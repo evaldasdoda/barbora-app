@@ -2,7 +2,7 @@
 
 .NAVBAR {
   position: sticky;
-  top:0;
+  top: 0;
   left: 0;
   display: flex;
   justify-content: space-between;
@@ -12,6 +12,7 @@
   z-index: 99;
   background-color: $white;
   box-shadow: $shadow-xs;
+
   &__logoCont {
     width: 100px;
   }
@@ -27,12 +28,14 @@
 
 .CART-DESK {
   display: flex;
-  color: $grey;
+  color: $d-grey;
   border: 1px solid $grey;
   border-radius: $radius-md;
   padding: $space-xxs $space-xs;
+
   &__icon {
     position: relative;
+
     &-badge {
       text-align: center;
       position: absolute;
@@ -46,6 +49,7 @@
       font-size: $font-xxs;
     }
   }
+
   &__price {
     margin-left: $space-xs;
   }
@@ -60,12 +64,14 @@
 .CART-MOBILE {
   display: none;
   align-items: center;
-  color: $grey;
+  color: $d-grey;
   padding: $space-xxs $space-xs;
   cursor: pointer;
+
   &__icon {
     font-size: 25px;
   }
+
   &__price {
     margin-left: $space-xs;
   }

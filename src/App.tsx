@@ -1,18 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import {Navbar} from "./Components/Navbar/Navbar";
 import {ShopLayout} from "./Pages/Shop/ShopLayout";
 import SidebarProvider from "./Context/SidebarContext/SidebarContext";
+import CartProvider from "./Context/CartContext/CartContext";
 
 function App() {
-  return (
-    <>
-        <SidebarProvider>
-          <Navbar />
-          <ShopLayout />
-        </SidebarProvider>
-    </>
-  );
+    return (
+        <>
+            <CartProvider>
+                <SidebarProvider>
+                    <Navbar/>
+                    <ShopLayout/>
+                </SidebarProvider>
+            </CartProvider>
+        </>
+    );
 }
 
 export default App;

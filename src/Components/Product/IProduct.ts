@@ -4,5 +4,10 @@ export interface IProduct {
     productPrice: string | number,
     productDiscountPrice: string | number,
     productImage: string,
-    productWithoutE: boolean
+    productWithoutE: boolean,
+    productQty?: number
+}
+
+export interface IProductObject {
+    product: IProduct
 }

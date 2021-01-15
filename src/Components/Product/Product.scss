@@ -2,25 +2,58 @@
 
 .PRODUCT {
   padding: $space-sm;
+
   &__container {
+    position: relative;
     border: 1px solid $grey;
     border-radius: $radius-sm;
     padding: $space-xs;
     background: $white;
     text-align: center;
-    min-height: 320px;
+    min-height: 340px;
+
+    &-woe {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border: 1px solid $d-grey;
+      border-radius: $radius-lg;
+      color: $d-grey;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 18px;
+      cursor: default;
+
+      &:after {
+        content: "";
+        width: 20px;
+        height: 1px;
+        background-color: $d-grey;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 9px;
+        left: 0;
+        z-index: 99;
+      }
+    }
+
     &-image {
       height: 150px;
+
       img {
         margin: 0 auto;
       }
     }
+
     &-title {
       min-height: 40px;
     }
+
     &-price {
       color: $red
     }
+
     &-button {
       margin-top: $space-sm;
     }
@@ -30,6 +63,7 @@
 @media (max-width: $md) {
   .PRODUCT {
     padding: 0;
+
     &__container {
       border: none;
       border-radius: 0;
@@ -41,16 +75,20 @@
       align-items: center;
       justify-content: center;
       padding: $space-sm;
+
       &-image {
         height: 70px;
         width: 20%;
       }
+
       &-title {
         width: 80%;
       }
+
       &-price {
         width: 50%;
       }
+
       &-button {
         margin: 0;
         width: 50%;

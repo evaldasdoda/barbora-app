@@ -11,7 +11,7 @@ export const Navbar = () => {
                 <img src={Logo} alt="Logo"/>
             </div>
             <div className="NAVBAR__cartCont">
-                <Cart />
+                <Cart/>
             </div>
         </nav>
     )
