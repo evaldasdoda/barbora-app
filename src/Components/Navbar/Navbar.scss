@@ -10,6 +10,12 @@
   }
 }
 
+@media (max-width: $md) {
+  .NAVBAR {
+    border-bottom: 1px solid $grey;
+  }
+}
+
 .CART {
   display: flex;
   color: $grey;

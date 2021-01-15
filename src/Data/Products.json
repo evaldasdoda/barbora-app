@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "productName": "SMETONIŠKA duonos gira, 2 l",
+    "productPrice": "0,89",
+    "productDiscountPrice": "",
+    "productImage": "gira.png",
+    "productWithoutE": false
+  },
+  {
+    "id": 2,
+    "productName": "Kavos pupelės ESPRESSO ITALIANO, 1 kg",
+    "productPrice": "6,99",
+    "productDiscountPrice": "",
+    "productImage": "kava.png",
+    "productWithoutE": false
+  },
+  {
+    "id": 3,
+    "productName": "Originalus pomidorų padažas VILNIUS, 500 g",
+    "productPrice": "1,49",
+    "productDiscountPrice": "",
+    "productImage": "ppadazas.png",
+    "productWithoutE": false
+  },
+  {
+    "id": 4,
+    "productName": "Maisto papildas HEMATOGENAS VITA+, 50 g",
+    "productPrice": "0,50",
+    "productDiscountPrice": "",
+    "productImage": "hematogenas.png",
+    "productWithoutE": false
+  },
+  {
+    "id": 5,
+    "productName": "Aukščiausios rūšies kvietiniai miltai KAUNO GRŪDAI, 2 kg",
+    "productPrice": "1,19",
+    "productDiscountPrice": "",
+    "productImage": "miltai.png",
+    "productWithoutE": false
+  },
+  {
+    "id": 6,
+    "productName": "Skalbiamosios kapsulės ARIEL COLOR, 26 vnt.",
+    "productPrice": "6,99",
+    "productDiscountPrice": "",
+    "productImage": "skapsules.png",
+    "productWithoutE": false
+  },
+  {
+    "id": 7,
+    "productName": "Sūdyta BAJORIŠKA silkių filė (originali), 320 g",
+    "productPrice": "1,29",
+    "productDiscountPrice": "",
+    "productImage": "silkiufile.png",
+    "productWithoutE": false
+  },
+  {
+    "id": 8,
+    "productName": "Fermentinis sūris ATLEET ORIGINAL, 26% rieb., 200 g",
+    "productPrice": "1,32",
+    "productDiscountPrice": "",
+    "productImage": "fermsuris.png",
+    "productWithoutE": false
+  },
+  {
+    "id": 9,
+    "productName": "Žirnių ankštys, fas. (be žirnių), 150 g",
+    "productPrice": "1,49",
+    "productDiscountPrice": "",
+    "productImage": "zirniai.png",
+    "productWithoutE": false
+  },
+  {
+    "id": 10,
+    "productName": "Žaliosios besėklės vynuogės, 1 kg",
+    "productPrice": "3,89",
+    "productDiscountPrice": "",
+    "productImage": "vynuoges.png",
+    "productWithoutE": false
+  },
+  {
+    "id": 11,
+    "productName": "Pienas, 2,5% rieb. \"DVARO\", 1 l",
+    "productPrice": "0,79",
+    "productDiscountPrice": "",
+    "productImage": "pienas.png",
+    "productWithoutE": false
+  },
+  {
+    "id": 12,
+    "productName": "DVARO grietinė, 30% rieb., 380 g",
+    "productPrice": "1,69",
+    "productDiscountPrice": "",
+    "productImage": "grietine.png",
+    "productWithoutE": true
+  }
+]

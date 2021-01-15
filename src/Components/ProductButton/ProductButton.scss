@@ -1,0 +1,24 @@
+@import "../../Assets/style";
+
+.PRODUCT-BUTTON {
+  background-color: $red;
+  color: $white;
+  border-radius: $radius-md;
+  border: none;
+  padding: $space-xxs $space-xs;
+  cursor: pointer;
+  transition: all $duration-sm;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@import "../../Assets/style";
+
+@media (max-width: $md) {
+  .PRODUCT-BUTTON {
+    display: block;
+    padding: $space-xs $space-md;
+    width: 100%;
+  }
+}

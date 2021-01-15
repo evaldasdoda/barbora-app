@@ -1,0 +1,60 @@
+@import "../../Assets/style";
+
+.PRODUCT {
+  padding: $space-sm;
+  &__container {
+    border: 1px solid $grey;
+    border-radius: $radius-sm;
+    padding: $space-xs;
+    background: $white;
+    text-align: center;
+    min-height: 320px;
+    &-image {
+      height: 150px;
+      img {
+        margin: 0 auto;
+      }
+    }
+    &-title {
+      min-height: 40px;
+    }
+    &-price {
+      color: $red
+    }
+    &-button {
+      margin-top: $space-sm;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .PRODUCT {
+    padding: 0;
+    &__container {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid $grey;
+      display: flex;
+      flex-wrap: wrap;
+      min-height: auto;
+      text-align: left;
+      align-items: center;
+      justify-content: center;
+      padding: $space-sm;
+      &-image {
+        height: 70px;
+        width: 20%;
+      }
+      &-title {
+        width: 80%;
+      }
+      &-price {
+        width: 50%;
+      }
+      &-button {
+        margin: 0;
+        width: 50%;
+      }
+    }
+  }
+}
