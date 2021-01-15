@@ -4,6 +4,7 @@ import {ProductButton} from "../ProductButton/ProductButton";
 import './Product.scss';
 
 export const Product = (props: IProduct) => {
+    //TODO: Add tooltip on without E products, react-tooltip lib installed
     return (
         <div className='PRODUCT'>
             <div className="PRODUCT__container">

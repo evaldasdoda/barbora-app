@@ -1,10 +1,17 @@
 @import "../../Assets/style";
 
 .NAVBAR {
+  position: sticky;
+  top:0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: $space-xs $space-sm;
+  padding: $space-xs;
+  height: 55px;
+  z-index: 99;
+  background-color: $white;
+  box-shadow: $shadow-xs;
   &__logoCont {
     width: 100px;
   }
@@ -12,11 +19,13 @@
 
 @media (max-width: $md) {
   .NAVBAR {
+    padding: 0 $space-sm;
+    height: 75px;
     border-bottom: 1px solid $grey;
   }
 }
 
-.CART {
+.CART-DESK {
   display: flex;
   color: $grey;
   border: 1px solid $grey;
@@ -39,5 +48,31 @@
   }
   &__price {
     margin-left: $space-xs;
+  }
+}
+
+@media (max-width: $md) {
+  .CART-DESK {
+    display: none;
+  }
+}
+
+.CART-MOBILE {
+  display: none;
+  align-items: center;
+  color: $grey;
+  padding: $space-xxs $space-xs;
+  cursor: pointer;
+  &__icon {
+    font-size: 25px;
+  }
+  &__price {
+    margin-left: $space-xs;
+  }
+}
+
+@media (max-width: $md) {
+  .CART-MOBILE {
+    display: flex;
   }
 }

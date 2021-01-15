@@ -8,8 +8,13 @@
     background-color: $wheat;
   }
   &__sider {
+    position: sticky;
+    top: 55px;
+    right: 0;
     width: 20%;
     background-color: $l-grey;
+    border-left: 1px solid $grey;
+    max-height: calc(100vh - 55px);
   }
 }
 
@@ -20,12 +25,17 @@
     }
     &__sider {
       position: absolute;
-      top:0;
+      top: 75px;
       left: 0;
       z-index: 99;
       width: 100%;
       min-height: 100vh;
+      transition: all $duration-md;
+      border: none;
       transform: translateX(100%);
+      &.active {
+        transform: translateX(0);
+      }
     }
   }
 }
@@ -50,6 +60,45 @@
   .SHOP-PRODUCTS {
     &__product {
       width: 100%;
+    }
+  }
+}
+
+.SHOP-SIDER {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  &__topCont {
+    padding: $space-xs;
+    h4 {
+      margin-top: $space-xs;
+    }
+  }
+  &__bottomCont {
+    display: flex;
+    background-color: $white;
+    padding: $space-sm $space-xs $space-xs;
+    &-button{
+      width: 60%;
+      padding-right: $space-xxs;
+      button {
+        background-color: $grey;
+        color: $l-grey;
+        border: none;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-price {
+      font-size: $font-xxs;
+      width: 40%;
+    }
+    .price, .price-title {
+      display: block;
+    }
+    .price-title {
+      color: $grey;
     }
   }
 }
