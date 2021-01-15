@@ -1,0 +1,36 @@
+@import "../../Assets/style";
+
+.SIDEBAR-PRODUCT {
+  display: flex;
+  background-color: $white;
+  padding: $space-xs;
+  font-size: $font-xxs;
+  &__image {
+    img {
+      width: 100px;
+    }
+  }
+  &__info {
+    &-title {
+      width: 100%;
+    }
+    &-details {
+      margin-top: $space-xs;
+      display: flex;
+      align-items: center;
+      &-qty {
+        width: 50%;
+        border: 1px solid $grey;
+        padding: $space-xxs;
+        .qty-title {
+          margin-left: $space-xs;
+        }
+      }
+      &-price {
+        width: 50%;
+        text-align: right;
+        color: $red;
+      }
+    }
+  }
+}

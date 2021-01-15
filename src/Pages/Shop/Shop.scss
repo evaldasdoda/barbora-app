@@ -18,6 +18,17 @@
   }
 }
 
+@media (max-width: $xl) {
+  .SHOP {
+    &__products {
+      width: 70%;
+    }
+    &__sider {
+      width: 30%;
+    }
+  }
+}
+
 @media (max-width: $md) {
   .SHOP {
     &__products {
@@ -106,5 +117,4 @@
   .SHOP-SIDER {
     min-height: calc(100vh - 75px);
   }
-
 }

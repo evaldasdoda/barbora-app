@@ -1,5 +1,6 @@
 import React from 'react';
 import './Shop.scss';
+import {SidebarProduct} from "../../Components/SidebarProduct/SidebarProduct";
 
 export const ShopSider = () => {
     return (
@@ -9,7 +10,7 @@ export const ShopSider = () => {
                     <h4>Krepšelis</h4>
                 </div>
                 <div className="SHOP-SIDER__topCont-products">
-
+                    <SidebarProduct />
                 </div>
             </div>
             <div className="SHOP-SIDER__bottomCont">
